@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+</head>
+<body>
+	<h2 align="center">Student Registration Form</h2>
+	<hr><br>
+
+	<form action = "Java.jsp" method = "POST" target="_blank">
+		<b>Student's Name :</b>
+		<input type="text" name="sname">	<br><br>
+
+		<b>DOB :</b>
+		<input type="date" name="dob">	<br><br>
+
+		<b>Gender :</b>
+		<select name="gen">
+  			<option value="Male">Male</option>
+  			<option value="Female">Female</option>
+		</select>	<br><br>
+
+		<b>Registration No :</b>
+		<input type="text" name="regd">	<br><br>
+
+		<b>Department :</b>
+		<input type="text" name="dept">	<br><br>
+
+		<b>Address :</b>
+		<textarea rows="2" cols="40" name="address"></textarea>	<br><br>
+
+		<b>Contact No :</b>
+		<input type="text" name="mob">	<br><br>
+
+		<b>Email :</b>
+		<input type="email" name="mail">	<br><br>
+
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+</html>

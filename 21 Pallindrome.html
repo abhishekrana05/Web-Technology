@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pallindrome</title>
+	<script type="text/javascript">
+		function check() {
+			var n = document.getElementById('num').value;
+			var t = n;
+			var r = 0;
+
+			while(n != 0) {
+				var d = parseInt(n % 10);
+				r = parseInt(r * 10 + d);
+				n = parseInt(n / 10);
+			}
+			if(r == t)				
+				document.getElementById('res').innerHTML = "Number is Pallindrome.";
+			else
+				document.getElementById('res').innerHTML = "Number is not Pallindrome.";
+		}
+	</script>
+</head>
+<body>
+	<h3>Pallindrome</h3>
+	Enter a Number
+	<input type="text" name="num" id="num">
+	<input type="button" value="Check" onclick="check()">
+	<h4 id="res"></h4>
+</body>
+</html>

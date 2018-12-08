@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DHTML Filters</title>
+	<style type="text/css">
+		td {
+			font-size: 20px;
+			font-family: Segoe UI;
+			font-weight: 500;
+			padding: 5px;
+			width: 135px;
+			height: 30px;
+			border: 1px solid grey;
+			-webkit-user-select: none;			
+		}
+
+		td:hover {background-color: #ddd;}
+
+		table {	border-collapse: collapse; }
+	</style>
+
+	<script type="text/javascript">
+		function filter(choice) {	
+			if (choice==1) {
+				document.getElementById("image").style.filter = "blur(5px)";
+			} 
+
+			else if (choice==2) {
+				document.getElementById("image").style.filter = "brightness(200%)";
+			}
+
+			else if (choice==3) {
+				document.getElementById("image").style.filter = "contrast(200%)";
+			}
+
+			else if (choice==4) {
+				document.getElementById("image").style.filter = "drop-shadow(8px 8px 10px gray)";
+			}
+
+			else if (choice==5) {
+				document.getElementById("image").style.filter = "saturate(8)";
+			}			
+
+			else if (choice==6) {
+				document.getElementById("image").style.filter = "grayscale(100%)";
+			}
+
+			else if (choice==7) {
+				document.getElementById("image").style.filter = "hue-rotate(90deg)";
+			}
+
+			else if (choice==8) {
+				document.getElementById("image").style.filter = "invert(100%)";
+			}
+
+			else if (choice==9) {
+				document.getElementById("image").style.filter = "opacity(30%)";
+			}
+
+			else if (choice==10) {
+				document.getElementById("image").style.filter = "sepia(100%)";
+			}
+		}
+	</script>
+</head>
+<body align="center">
+	<img src="Image23.jpg" id="image" height="45%" width="55%">
+	<h2>Filter Properties </h2>
+	<h3>(Hover Over Mouse on Filter Properties to See the Effects)</h3>
+	<table align="center">
+		<tr>			
+			<td onmouseover="filter(1)">blur</td>
+			<td onmouseover="filter(2)">brightness</td>
+			<td onmouseover="filter(3)">contrast</td>
+			<td onmouseover="filter(4)">drop-shadow</td>
+			<td onmouseover="filter(5)">saturate</td>
+		</tr>
+
+		<tr>
+			<td onmouseover="filter(6)">grayscale</td>
+			<td onmouseover="filter(7)">hue-rotate</td>
+			<td onmouseover="filter(8)">invert</td>
+			<td onmouseover="filter(9)">opacity</td>
+			<td onmouseover="filter(10)">sepia</td>			
+		</tr>
+	</table>
+</body>
+</html>
